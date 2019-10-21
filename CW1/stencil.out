@@ -1,0 +1,17 @@
+Running on host compute085.bc4.acrc.priv
+Time is Mon Oct 21 19:04:36 BST 2019
+Directory is /mnt/storage/home/fw17231/intro-hpc-cw1
+Slurm job ID is 2574868
+
+This job runs on the following machines:
+compute085
+
+------------------------------------
+ runtime: 11.635089 s
+------------------------------------
+------------------------------------
+ runtime: 11.641640 s
+------------------------------------
+------------------------------------
+ runtime: 11.681603 s
+------------------------------------
