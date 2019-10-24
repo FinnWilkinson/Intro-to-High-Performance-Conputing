@@ -60,10 +60,11 @@ int main(int argc, char* argv[])
 void stencil(const int nx, const int ny, const int width, const int height,
              float* image, float* tmp_image)
 {
-  for (int i = 1; i < nx + 1; i++) {
-    for (int j = 1; j < ny + 1; j++) {
+  for (int j = 1; j < ny + 1; j++) {
+    for (int i = 1; i < nx + 1; i++) {
       int currentPos = j+i*height;
-      tmp_image[currentPos] =  ((image[currentPos-height] +  image[currentPos-1] +  image[currentPos+1] +  image[currentPos+height]) * 0.1)
+      tmp_image[currentPos] =  ((image[currentPos-height] +  image[currentPos-1]
+                            + image[currentPos+1] +  image[currentPos+height]) * 0.1)
                             + image[currentPos] * 0.6;
     }
   }
