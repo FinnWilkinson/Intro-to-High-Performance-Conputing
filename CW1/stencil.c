@@ -69,7 +69,7 @@ void stencil(const int nx, const int ny, const int width, const int height,
   }
 }
 
-//ORIGINAL
+//ORIGINAL PROVIDED CODE
 /*void stencil(const int nx, const int ny, const int width, const int height,
              float* image, float* tmp_image)
 {
@@ -80,21 +80,6 @@ void stencil(const int nx, const int ny, const int width, const int height,
       tmp_image[j + i * height] += image[j     + (i + 1) * height] * 0.5 / 5.0;
       tmp_image[j + i * height] += image[j - 1 + i       * height] * 0.5 / 5.0;
       tmp_image[j + i * height] += image[j + 1 + i       * height] * 0.5 / 5.0;
-    }
-  }
-}*/
-
-//new and working
-/*void stencil(const int nx, const int ny, const int width, const int height,
-             float* image, float* tmp_image)
-{
-  for (int i = 1; i < nx + 1; i++) {
-    int currentPos = i * height;
-    for (int j = 1; j < ny + 1; j++) {
-      currentPos++;
-      tmp_image[currentPos] = ((image[currentPos - height] + image[currentPos - 1] + image[currentPos + 1] + image[currentPos + height]) * 0.1)
-                            + (image[currentPos] * 0.6);
-
     }
   }
 }*/
